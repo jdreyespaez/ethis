@@ -1,10 +1,20 @@
 html
   include ./partials/head.jade
   body
+    include ./partials/header.jade
     main.main
-      div.wraper
-        include ./partials/header.jade
+      div.u-wraper
         div.copy
           h1.copy__title Property Investment 2016
-          p.copy__tag-line These properties in Malaysia and Indonesia  have been carefuly vetted and approved be credible property developers. 
+          p.copy__tag-line These properties in Malaysia and Indonesia have been carefully vetted and approved by credible property developers. 
+        div.grid
+          include ./ui/card-funded.jade
+          include ./ui/card-partial.jade
+          include ./ui/card-preview.jade
+          include ./ui/card-partial.jade
+          include ./ui/card-preview.jade
+          include ./ui/card-funded.jade
+          include ./ui/card-preview.jade
+          include ./ui/card-funded.jade
+          include ./ui/card-partial.jade
     include ./partials/footer.jade
