@@ -1,0 +1,73 @@
+.overview{
+	position: relative;
+	.overview__image{
+		.image__background{
+			min-width:100%;
+		}
+	}
+	.card--overview{
+		position:absolute;
+		top:45%;
+		right:10px;
+		width:40%;
+	}
+	@at-root{
+		.card{
+			width:33%;
+			background:white;
+			border-radius:7px;
+			box-shadow:2px 0px 0.5px rgba(0,0,0,0.5);
+			font-family: 'Raleway';
+			.card__header{
+				padding:.5em 1em;
+				line-height: 1.4em;
+				border-bottom:1px solid rgba(0,0,0,0.2);
+				.header__name{
+					font-weight: bold;
+				}
+			}
+			.card__description{
+				display:flex;
+				align-items:center;
+				background:blue;
+				padding:3em 1em;
+				.description__money{
+					flex-basis:40%;
+					box-sizing:border-box;
+					height: 100%;
+				}
+				.description__data{
+					.data__list{
+						.list__item{
+							margin-bottom:1.5em;
+							.item__left{
+								margin-right:1em;
+							}
+						}
+					}
+				}
+			}
+			.card__status{
+				padding-bottom: .5em;
+				.status__bar{
+					.status__progress{
+						color:white;
+						display:block;
+						width:60%;
+						padding:.5em 1em;
+						background:green;
+					}
+				}
+			}
+		}
+	}
+	.overview__footer{
+		background:black;
+		color:white;
+		display: flex;
+		padding:1em 0;
+		.overview__footer__item{
+			padding-left:2em;
+		}
+	}
+}

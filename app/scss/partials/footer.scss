@@ -1,0 +1,37 @@
+@import '../_vars';
+
+.footer{
+	background:$f-black;
+	padding-top:3em;
+	padding-bottom:2em;
+	.footer__company{
+		display:flex;
+		justify-content:flex-end;
+		.company__column{
+			margin-left:2em;
+			text-align:right;
+			.company__text{
+				margin-bottom:.8em;
+			}
+			.company__footer-nav{
+				.footer-nav__list{
+					.list__item{
+						.item__link{
+							text-decoration:none;
+							color:red;
+						}
+					}
+				}
+			}
+		}
+	}
+	.disclaimer{
+		.disclaimer__text{
+			margin-bottom:3em;
+		}
+		.disclaimer__p{
+			text-align: justify;
+			line-height: 1.4em;
+		}
+	}
+}

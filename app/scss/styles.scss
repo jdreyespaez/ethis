@@ -1,4 +1,13 @@
 @charset 'UTF-8';
 @import './lib/reset';
 @import '_vars';
+
+body {
+	font-size:16px;
+}
+
+
 @import './partials/header';
+@import './partials/footer';
+@import './partials/overview';
+@import './partials/card-parrilla';

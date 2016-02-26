@@ -4,11 +4,22 @@ header{
     box-sizing: border-box;
     padding-top: 30px;
     padding-bottom: 30px;
-    background-color: $bg-header;
+    background-color: $green;
     display: flex;
+    @at-root{
+      .u-wraper{
+          max-width: 1200px;
+          width: 90%;
+          margin: 0 auto;
+      }
+    }
     .header__logo{
       .logo__text{
         text-indent: -999px;
+      }
+      .logo__img{
+        position: relative;
+        top:-10px;
       }
     }
     .header-logo-nav {
@@ -26,17 +37,23 @@ header{
             font-weight: 500;
             margin: 10px 20px;
             .item__link--btn{
-              color: $bg-header;
+              color: $green;
               background-color: white;
             }
           }
         }
+        .list__item--btn{
+          margin-left:.8em;
+          padding:.5em;
+          font-size:16px;
+          box-sizing:border-box;
+          background:white;
+          border-radius: 25px;
+          line-height:20px;
+          .item__link{
+            color:$green;
+          }
+        }
       }
     }
-}
-
-.u-wraper{
-    max-width: 1200px;
-    width: 90%;
-    margin: 0 auto;
 }

@@ -1,0 +1,45 @@
+.card-parrilla {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 1em;
+  justify-content: space-between;
+  font-family: 'Raleway';
+  .card-project{
+    max-height: 350px;
+    overflow-y: scroll;
+    flex-basis: 49%;
+    border-radius:7px;
+    border:1.8px solid rgba(211,211,211,1);
+    box-shadow:1.5px 0px 0.5px rgba(0,0,0,0.5);
+    margin-bottom: 1.1em;
+    .card-project__header{
+      border-bottom: 1px solid rgba(211,211,211,0.8);
+      padding: 1em;
+      .card-project__title{
+        color: #2a2a2a;
+      }
+    }
+    .card-project__content{
+      padding:1em;
+      line-height: 2em;
+      .content__data{
+        margin-bottom: 1.5em;
+        .data__item{
+          .item__char{
+            font-weight:bold;
+          }
+          .item__infor{
+            font-size:0.8em;
+          }
+        }
+      }
+      .content__campaign-number{
+        font-weight: bold;
+        text-decoration: underline;
+      }
+    }
+  }
+  .card--big{
+    flex-basis:100%;
+  }
+}
