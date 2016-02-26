@@ -1,0 +1,42 @@
+@import '../_vars';
+
+header{
+    box-sizing: border-box;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: $bg-header;
+    display: flex;
+    .header__logo{
+      .logo__text{
+        text-indent: -999px;
+      }
+    }
+    .header-logo-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .nav__list{
+        .list__item{
+          display: inline-block;
+          .item__link{
+            text-decoration: none;
+            text-transform: uppercase;
+            color: white;
+            font-family: $raleway-medium;
+            font-weight: 500;
+            margin: 10px 20px;
+            .item__link--btn{
+              color: $bg-header;
+              background-color: white;
+            }
+          }
+        }
+      }
+    }
+}
+
+.u-wraper{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
