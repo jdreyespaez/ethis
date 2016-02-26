@@ -5,8 +5,7 @@
   justify-content: space-between;
   font-family: 'Raleway';
   .card-project{
-    max-height: 350px;
-    overflow-y: scroll;
+    height:400px;
     flex-basis: 49%;
     border-radius:7px;
     border:1.8px solid rgba(211,211,211,1);
@@ -14,22 +13,24 @@
     margin-bottom: 1.1em;
     .card-project__header{
       border-bottom: 1px solid rgba(211,211,211,0.8);
-      padding: 1em;
-      .card-project__title{
+      padding: 2em;
+      .header__title{
         color: #2a2a2a;
+        font-size: 25px;
       }
     }
     .card-project__content{
-      padding:1em;
+      padding:2em;
       line-height: 2em;
+      max-height: 220px;
+      overflow-y: scroll;
       .content__data{
         margin-bottom: 1.5em;
         .data__item{
           .item__char{
             font-weight:bold;
           }
-          .item__infor{
-            font-size:0.8em;
+          .item__info{
           }
         }
       }
@@ -37,6 +38,16 @@
         font-weight: bold;
         text-decoration: underline;
       }
+    }
+    .card-project__map{
+      max-height: 280px;
+      padding: 1em;
+    }
+    .card-project__img{
+      max-height: 260px;
+      max-width: 100%;
+      overflow-y: scroll;
+      padding: 1em;
     }
   }
   .card--big{

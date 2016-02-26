@@ -1,6 +1,7 @@
 @import '../_vars';
 
 .footer{
+	font-family: 'Raleway';
 	background:$f-black;
 	padding-top:3em;
 	padding-bottom:2em;
@@ -12,13 +13,17 @@
 			text-align:right;
 			.company__text{
 				margin-bottom:.8em;
+				font-size: 1.5em;
+				color: #6E6E6E;
 			}
 			.company__footer-nav{
 				.footer-nav__list{
 					.list__item{
 						.item__link{
 							text-decoration:none;
-							color:red;
+							color:#eee;
+							font-size: 0.8em;
+							line-height: 2em;
 						}
 					}
 				}
@@ -28,10 +33,13 @@
 	.disclaimer{
 		.disclaimer__text{
 			margin-bottom:3em;
+			color: #fff;
 		}
 		.disclaimer__p{
 			text-align: justify;
 			line-height: 1.4em;
+			color: #fff;
+			font-weight: 300;
 		}
 	}
 }

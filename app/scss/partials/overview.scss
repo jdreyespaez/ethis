@@ -7,9 +7,9 @@
 	}
 	.card--overview{
 		position:absolute;
-		top:45%;
+		top:35%;
 		right:10px;
-		width:40%;
+		width:45%;
 	}
 	@at-root{
 		.card{
@@ -29,19 +29,44 @@
 			.card__description{
 				display:flex;
 				align-items:center;
-				background:blue;
+				background:#efefef;
 				padding:3em 1em;
+				justify-content: space-between;
 				.description__money{
-					flex-basis:40%;
+					flex-basis:30%;
 					box-sizing:border-box;
 					height: 100%;
+					text-align: center;
+					.money__raised{
+						font-weight: 700;
+						font-size: 22px;
+					}
+					.money__goal{
+						font-size: 16px;
+					}
 				}
 				.description__data{
+					flex-basis: 60%;
 					.data__list{
 						.list__item{
 							margin-bottom:1.5em;
 							.item__left{
 								margin-right:1em;
+								margin-left: 1em;
+								font-weight: 700;
+									.left__img{
+										width: 41px;
+										height: 41px;
+									}
+								}
+							.item__right{
+								margin-left: 30px;
+								text-align: left;
+								.item__right__note{
+									font-size: 0.7em;
+									text-align: center;
+								}
+							}
 							}
 						}
 					}
@@ -55,19 +80,19 @@
 						display:block;
 						width:60%;
 						padding:.5em 1em;
-						background:green;
+						background:#47AB58;
 					}
 				}
 			}
 		}
 	}
 	.overview__footer{
-		background:black;
+		font-family: 'Raleway';
+		background: #4e4e4e;
 		color:white;
 		display: flex;
 		padding:1em 0;
 		.overview__footer__item{
 			padding-left:2em;
 		}
-	}
 }
