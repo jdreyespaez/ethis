@@ -5,7 +5,7 @@
   justify-content: space-between;
   font-family: 'Raleway';
   .card-project{
-    height:400px;
+    height:600px;
     flex-basis: 49%;
     border-radius:7px;
     border:1.8px solid rgba(211,211,211,1);
@@ -22,7 +22,7 @@
     .card-project__content{
       padding:2em;
       line-height: 2em;
-      max-height: 220px;
+      max-height: 400px;
       overflow-y: scroll;
       .content__data{
         margin-bottom: 1.5em;
@@ -40,11 +40,11 @@
       }
     }
     .card-project__map{
-      max-height: 280px;
+      max-height: 470px;
       padding: 1em;
     }
     .card-project__img{
-      max-height: 260px;
+      max-height: 480px;
       max-width: 100%;
       overflow-y: scroll;
       padding: 1em;
@@ -52,5 +52,8 @@
   }
   .card--big{
     flex-basis:100%;
+  }
+  .card--dp{
+    height: 450px;
   }
 }

@@ -2,12 +2,14 @@
 @import './lib/reset';
 @import '_vars';
 
-body {
-	font-size:16px;
-}
-
-
 @import './partials/header';
 @import './partials/footer';
 @import './partials/overview';
 @import './partials/card-parrilla';
+@import './partials/copy';
+
+.grid{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}

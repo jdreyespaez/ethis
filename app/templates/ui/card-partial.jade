@@ -1,8 +1,10 @@
 div.card
+  div.card__hover
+    img(src="images/view-property.png").hover__view
   div.card__header
     h2.header__name Villas at Berjaya Hills
     h3.header__address Wangsa Maju, Kuala Lumpur
-  div.card__description
+  div.card__description.card--height
     div.description__money
       h2.money__raised MYR 25,000
       h3.money__goal raised out of MYR 100,000
@@ -10,7 +12,7 @@ div.card
       ul.data__list
         li.list__item
           span.item__left
-            img(src="", alt="").left__img
+            img(src="images/iconcondo.svg", alt="").left__img
           span.item__right Wagf Property
         li.list__item
           span.item__left 3.25%
@@ -18,10 +20,10 @@ div.card
         li.list__item
           span.item__left 6.5 months
           span.item__right Project Timeline
-    div.card__image
-      img.bar__img-back(src="images/partial.png")
+  div.card__image
+    img.image__back(src="images/partial.png")
     div.card__status
       div.status__bar
-        h2.bar__progress 25% FUNDED | 
-        h3.bar__investors +12 investors insterested
-      
+        span.status--background
+        h2.bar__progress.bar--background 25% FUNDED | +12 investors insterested
+        

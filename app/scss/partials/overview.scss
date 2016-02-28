@@ -1,4 +1,28 @@
 .overview{
+	.overview__hover{
+		display: flex;
+		.hover__overview{
+			opacity: 0;
+			position:relative;
+			bottom: -160px;
+			right: 384px;
+			justify-content: center;
+			align-items: center;
+			flex-basis: 80%;
+			display: block;
+			background-color: #000;
+		}
+	}
+
+	.overview:hover{
+		.overview__hover:hover{
+			.hover__overview:hover{
+					opacity: 1;
+			}
+		}
+	}
+
+	}
 	position: relative;
 	.overview__image{
 		.image__background{
@@ -11,9 +35,32 @@
 		right:10px;
 		width:45%;
 	}
+	.card--note{
+		color:white;
+		width:69%;
+		padding:.5em 1em;
+		background:#47AB58;
+		margin-bottom: 1em;
+	}
 	@at-root{
 		.card{
-			width:33%;
+			.card__hover{
+				display: flex;
+				.hover__view{
+					opacity: 0;
+					position:relative;
+					bottom: -160px;
+					right: 384px;
+					justify-content: center;
+					align-items: center;
+					flex-basis: 80%;
+					display: block;
+					background-color: #000;
+				}
+			}
+			width:32%;
+			margin-bottom: 1em;
+			margin-top: 1em;
 			background:white;
 			border-radius:7px;
 			box-shadow:2px 0px 0.5px rgba(0,0,0,0.5);
@@ -26,16 +73,19 @@
 					font-weight: bold;
 				}
 			}
+			.card--height{
+				min-height: 179px;
+			}
 			.card__description{
 				display:flex;
 				align-items:center;
+				//min-height: 228px;
 				background:#efefef;
-				padding:3em 1em;
+				padding:1.5em 0.5em;
 				justify-content: space-between;
 				.description__money{
 					flex-basis:30%;
 					box-sizing:border-box;
-					height: 100%;
 					text-align: center;
 					.money__raised{
 						font-weight: 700;
@@ -60,7 +110,7 @@
 									}
 								}
 							.item__right{
-								margin-left: 30px;
+								margin-left: 1em;
 								text-align: left;
 								.item__right__note{
 									font-size: 0.7em;
@@ -72,17 +122,56 @@
 					}
 				}
 			}
-			.card__status{
-				padding-bottom: .5em;
-				.status__bar{
-					.status__progress{
-						color:white;
-						display:block;
-						width:60%;
-						padding:.5em 1em;
-						background:#47AB58;
+			.card__image{
+				display: flex;
+				.image__back{
+					width: 100%;
+					height: 206px;
+					border-bottom-left-radius: 5px;
+					border-bottom-right-radius: 5px;
+				}
+				.card__status{
+					padding-bottom: .5em;
+					position:relative;
+					bottom: -160px;
+					right: 384px;
+					flex-basis: 80%;
+					display: block;
+					// right:100px;
+					// width:45%;
+					.status__bar{
+						.status--background{
+							background-color: red;
+							//overflow: hidden;
+							width: 25px;
+						}
+						.status__progress{
+							color:white;
+							flex-basis: 90%;
+							display:block;
+							width:300px;
+							padding:.5em 1em;
+							background:#47AB58;
+						}
+						.bar--background{
+							background-color: #4e4e4e;
+						}
+						.bar__progress{
+							background:#4e4e4e;
+							width:300px;
+							color:white;
+							display:block;
+							padding:.5em 1em;
+						}
 					}
 				}
+			}
+		}
+	}
+	.card:hover{
+		.card__hover:hover{
+			.hover__view:hover{
+					opacity: 1;
 			}
 		}
 	}
